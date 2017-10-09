@@ -1,0 +1,161 @@
+.clr5,
+.clr10,
+.clr15,
+.clr20,
+.clr25,
+.clr30,
+.clr40,
+.clr50,
+.clr100 {
+	width: 100%;
+	clear: both;
+	float: left;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+.clr5 {
+	height: 5px;
+}
+.clr10 {
+	height: 10px;
+}
+.clr15 {
+	height: 15px;
+}
+.clr20 {
+	height: 20px;
+}
+.clr25 {
+	height: 25px;
+}
+.clr30 {
+	height: 30px;
+}
+.clr40 {
+	height: 40px;
+}
+.clr50 {
+	height: 50px;
+}
+.clr100 {
+	height: 100px;
+}
+.no-padding {
+	padding: 0!important;
+}
+.no-margin {
+	margin: 0!important;
+}
+@media (max-width: 767px) {
+	.no-padding-xs {
+		padding: 0!important;
+	}
+}
+
+body {
+	background-color: #fff;
+}
+
+.container {
+	max-width: 700px;
+	text-align: center;
+}
+
+.cont {
+	position: relative;
+}
+
+.col {
+	display: inline-block;
+	position: relative;
+	height: 200px;
+	width:200px;
+	z-index: 5;
+}
+
+.col.disableClick {
+	pointer-events: none;
+}
+
+#grid{
+	position: absolute;
+	top: 360px;
+	left: 340px;
+}
+
+
+.col:hover {
+	cursor: pointer;
+}
+
+svg {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+svg g{
+	width: 100%;
+	height: 100%;
+}
+
+path {
+	stroke-width: 12;
+	stroke: black;
+	fill:none;
+	animation-name: draw;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+
+
+
+#line-1 {
+	animation-duration: 1s;
+	animation-delay: 0s;
+}
+
+#line-2 {
+	animation-duration: 1s;
+	animation-delay: 2s;
+}
+
+#line-3  {
+	animation-duration: 1s;
+	animation-delay: 3s;
+}
+
+#line-4 {
+	animation-duration: 1s;
+	animation-delay: 4s;
+}
+
+#row-1,
+#row-2,
+#row-3,
+#column-1,
+#column-2,
+#column-3,
+#diagonal-1,
+#diagonal-2 {
+	display: none;
+	animation-duration: 1s;
+	animation-delay: 1s;
+}
+
+@keyframes draw {
+	to { stroke-dashoffset:0; }
+}
+
+.result-title,
+.result-btn {
+	display: none;
+}
+
+
