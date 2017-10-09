@@ -108,5 +108,5 @@ $('.col').click(function () {
 
 $('.start-btn').click(function () {
     $('.col').empty().removeClass('hasCircle hasCross disableClick');
-    $('#grid path').hide();
+    $('#row-1,#row-2,#row-3,#column-1,#column-2,#column-3,#diagonal-1,#diagonal-2').hide();
 });
