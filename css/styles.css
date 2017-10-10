@@ -14,47 +14,59 @@
 	line-height: 0;
 	overflow: hidden;
 }
+
 .clr5 {
 	height: 5px;
 }
+
 .clr10 {
 	height: 10px;
 }
+
 .clr15 {
 	height: 15px;
 }
+
 .clr20 {
 	height: 20px;
 }
+
 .clr25 {
 	height: 25px;
 }
+
 .clr30 {
 	height: 30px;
 }
+
 .clr40 {
 	height: 40px;
 }
+
 .clr50 {
 	height: 50px;
 }
+
 .clr100 {
 	height: 100px;
 }
+
 .no-padding {
-	padding: 0!important;
+	padding: 0 !important;
 }
+
 .no-margin {
-	margin: 0!important;
+	margin: 0 !important;
 }
+
 @media (max-width: 767px) {
 	.no-padding-xs {
-		padding: 0!important;
+		padding: 0 !important;
 	}
 }
 
 body {
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 .container {
@@ -70,20 +82,14 @@ body {
 	display: inline-block;
 	position: relative;
 	height: 200px;
-	width:200px;
+	width: 200px;
 	z-index: 5;
 }
 
 .col.disableClick {
 	pointer-events: none;
+	cursor: alias;
 }
-
-#grid{
-	position: absolute;
-	top: 360px;
-	left: 340px;
-}
-
 
 .col:hover {
 	cursor: pointer;
@@ -94,10 +100,10 @@ svg {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
 
-svg g{
+svg g {
 	width: 100%;
 	height: 100%;
 }
@@ -105,7 +111,7 @@ svg g{
 path {
 	stroke-width: 12;
 	stroke: black;
-	fill:none;
+	fill: none;
 	animation-name: draw;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
@@ -113,8 +119,6 @@ path {
 	animation-duration: 0.5s;
 	animation-delay: 0s;
 }
-
-
 
 #line-1 {
 	animation-duration: 1s;
@@ -126,7 +130,7 @@ path {
 	animation-delay: 2s;
 }
 
-#line-3  {
+#line-3 {
 	animation-duration: 1s;
 	animation-delay: 3s;
 }
@@ -150,7 +154,7 @@ path {
 }
 
 @keyframes draw {
-	to { stroke-dashoffset:0; }
+	to { stroke-dashoffset: 0; }
 }
 
 .result-title,
