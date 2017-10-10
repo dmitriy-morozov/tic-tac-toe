@@ -93,6 +93,11 @@ body {
 
 .col:hover {
 	cursor: pointer;
+	outline: none;
+}
+
+.col:focus {
+	outline: none;
 }
 
 svg {

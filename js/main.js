@@ -36,7 +36,7 @@ $('.col').click(function () {
     disableCell(1500);
 
     //check if cell has't symbol
-    if ($(this).not('.hasCircle') || $(this).not('.hasCross')) {
+    if (!$(this).hasClass('hasCircle') && !$(this).hasClass('hasCross')) {
 
         //check if step == cross
         if (step == 'cross') {
