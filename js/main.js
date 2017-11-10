@@ -10,6 +10,8 @@ var disableCell = function (timer) {
 };
 
 $(document).ready(function () {
+    $('#grid').show();
+
     //script for count strokeDasharray and strokeDashoffset for svg
     var svgPaths = jQuery('path');
     for (var x = 0; x < svgPaths.length; x++) {
