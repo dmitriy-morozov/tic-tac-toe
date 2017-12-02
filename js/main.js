@@ -142,6 +142,9 @@ $('.col').click(function () {
         ($('.col.hasCircle:nth-child(1),.col.hasCircle:nth-child(2),.col.hasCircle:nth-child(3)').length == 3) ||
         ($('.col.hasCircle:nth-child(4),.col.hasCircle:nth-child(5),.col.hasCircle:nth-child(6)').length == 3) ||
         ($('.col.hasCircle:nth-child(7),.col.hasCircle:nth-child(8),.col.hasCircle:nth-child(9)').length == 3) ||
+        ($('.col.hasCircle:nth-child(1),.col.hasCircle:nth-child(4),.col.hasCircle:nth-child(7)').length == 3) ||
+        ($('.col.hasCircle:nth-child(2),.col.hasCircle:nth-child(5),.col.hasCircle:nth-child(8)').length == 3) ||
+        ($('.col.hasCircle:nth-child(3),.col.hasCircle:nth-child(6),.col.hasCircle:nth-child(9)').length == 3) ||
         ($('.col.hasCircle:nth-child(3),.col.hasCircle:nth-child(5),.col.hasCircle:nth-child(7)').length == 3) ||
         ($('.col.hasCircle:nth-child(1),.col.hasCircle:nth-child(5),.col.hasCircle:nth-child(9)').length == 3)
     ) {
@@ -184,4 +187,7 @@ $('.start-btn').click(function () {
 
     //remove all line
     $('#row-1,#row-2,#row-3,#column-1,#column-2,#column-3,#diagonal-1,#diagonal-2').hide();
+    
+    //set counter to 0
+    clickCounter = 0;
 });
